@@ -101,6 +101,25 @@ h2 {
 
 /* font */
 
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 
 
 /* media */
