@@ -124,6 +124,12 @@ p {
   font-weight: bold;
 }
 
+/* stars */
+
+span * {
+  margin-right: 0.1rem;
+}
+
 /* media */
 
 @media screen and (max-width: 900px) {
