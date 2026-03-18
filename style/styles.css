@@ -16,3 +16,92 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* wrapper */
+
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* h1 */
+
+h1 {
+  text-align: center;
+}
+
+/* grid */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+/* card */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h2,p,span {
+  margin: 0 0 0 1rem;
+}
+
+/* btn */
+
+.btn-buy {
+  padding: 1.5rem 1rem;  
+  background-color: #001e42;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn-buy:hover {
+  color: salmon;
+}
+
+/* after */
+
+.card:nth-of-type(1)::after {
+  content: "Best Seller";
+  position: absolute;
+  background-color: #001e42;
+  color: #ffffff;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+.card:nth-of-type(2)::after {
+  content: "Back in Stock!";
+  position: absolute;
+  background-color: #001e42;
+  color: #ffffff;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* padding */
+
+h2 {
+  padding: 1rem 0;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+span {
+  padding-bottom: 1rem;
+}
