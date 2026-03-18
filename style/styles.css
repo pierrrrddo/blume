@@ -120,7 +120,9 @@ p {
   font-style: italic;
 }
 
-
+.btn-buy {
+  font-weight: bold;
+}
 
 /* media */
 
