@@ -33,8 +33,7 @@ h1 {
 /* grid */
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
@@ -43,7 +42,9 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
+  gap: 0.5rem;
 }
 
 h2,p,span {
@@ -95,13 +96,17 @@ h2,p,span {
 /* padding */
 
 h2 {
-  padding: 1rem 0;
+  padding: 0.5rem 0 1rem;
 }
 
-p {
-  padding: 1rem 0;
-}
+/* font */
 
-span {
-  padding-bottom: 1rem;
+
+
+/* media */
+
+@media screen and (max-width: 900px) {
+  body {
+    padding: 0 3rem;
+  }
 }
